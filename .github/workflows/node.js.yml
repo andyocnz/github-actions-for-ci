@@ -30,6 +30,8 @@ jobs:
         npm install
         npm run build
   test:
+     needs: build
+    runs-on: ubuntu-latest
      runs-on: ubuntu-latest
   strategy:
     matrix:
